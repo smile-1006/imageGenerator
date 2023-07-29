@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag "utf" for all symbol and charater (reconmended by HTML 5) -->
+    <meta charset="UTF-8">
+    <!-- meta tag compebility meta data tag for resent internet user expoler  --> 
+    <!-- [content = "width-device-width"] for mobile screeen the width of the screen will become smaller (size vary as the devices will be defferent ) -->
+    <!-- [initial-scale=1.0] is segnifice the zoom level for any website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [title] which show in the place of website name (show on tab heading). -->
+    <title>Document</title> 
+    <!-- to cleate the link between css and html page  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+    <h1>Photo Gallery</h1>
+    <h2>Enter the number of photos</h2>
+    <input type="number" id="input" class="input" value="0" min="1" max="10">
+    <small class ="errorMessage" id = "errorMessage">Error message</small>
+    <button class="btn" id="btn">Get Photo</button>
+    <div class="gallery" id="gallery">
+        <!-- <img src="https://images.unsplash.com/photo-1686572602340-46e0c2b2e352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="images">
+        <img src="https://images.unsplash.com/photo-1686572602340-46e0c2b2e352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="images">
+        <img src="https://images.unsplash.com/photo-1686572602340-46e0c2b2e352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="images">
+        <img src="https://images.unsplash.com/photo-1686572602340-46e0c2b2e352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="images"> -->
+ 
+    </div>
+    </div>
+    <!-- creating the link between html5 and javascript -->
+    <script src="index.js"></script>
+</body>
+</html>

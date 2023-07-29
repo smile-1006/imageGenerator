@@ -1,0 +1,137 @@
+
+/* for whole page of the browser and to design it using body */
+body{
+    /* TO REMOVE THE SPACE FROM THE CORNER OF THE HTML PAGE */
+    margin: 0;
+    /* TO EDIT THE FONT OF THE WHOLE WEBSITE */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*BACKGROUND COLOUR OF THE WEBSITE LIKE I HAVE USED HALF DARK AND LIGHT  */
+    /* WITH THE USE OF LINEAR GRADIENT WE CAN EASLY MIX TWO DIFFERENT COLOR IN OUR WEBSITE */
+    background: linear-gradient(to bottom,rgb(97, 97, 163),lightblue);   
+    /* to get every thing in the middle or in center of the page  */
+    display: flex;
+    min-height: 100vh;
+    /* it will make the page to seem in the horizentally centered */
+    justify-content: center;
+    /* it will make the page to seem in the vertically centered */
+    align-items: center;
+    /* IT CENTERS ALL THE TEXTS WHICH ARE WRITTEN ON THE WEBSITE */
+    text-align: center;
+}
+
+.container{
+    /* BACK GROUND COLOR OF THE CONTAINER (DIV(CONTAINER) OF html5 PAGE) */
+    background-color: rgb(193, 223, 248);
+    /* ADDING PADDING MEANS ADD SPACE BETWEEN THE TEXT AND CONTAINER  */
+    padding: 20px;
+    /* TO GET THE CORVE IN THE CORNER OF THE CONTAINER */
+    border-radius: 10px;
+    /* AS WE ONLY WANT VERTICALLY SHADOW IN THE BOTTOM 0(NOT IN RIGHT,LEFT AND UPPER OF THE CONTAINER), 10px (SHADOW IN THE BOTTOMOF THE CONTAINER) 20PX (IS THE RANGE OF THE BLUR EFFECT THE EDGES OF THE BOXES) */
+    /* rgba is for the color of the of the shadow you want in the edges of the container. */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3) ;
+    /* it will occupie the all most all the width up to the corner the left some a minimum distance from the corner */
+    width: 90%;
+    /* to get the margin in the top and bottom as according to our size of the page. */
+    margin: 10px;
+    /* TO GET EVERY THING IN THE CENTER INSIDE THE CONTAINER */
+    display: flex;
+    /* AS WE WANT EVERY THING IS ON SINGLE COLUMN AND DOES NOT COME IN ONE SINGLE LINE. */
+    flex-direction: column;
+    /* TO GET EVERYTHING ON THE CENTER  */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+    /* TO GET THE FONT WAIT TO BE THINNER */
+    font-weight: 400;
+}
+
+/* here we are editing the inside of the box. or the choice makker of (number of photos we want to have) */
+.input{
+    /* adding padding in top and bottom (15px),,, and as for left and right (10px) */
+    padding: 15px 10px; 
+    /* font size inside the choice makker from 1 to 10  */
+    font-size: 20px;
+    /* the background color of the box  */
+    background-color: rgb(248, 248, 238);
+    /* how much rounded or corved should be the verties of the box */
+    border-radius:15px;
+    /* it will show in the middle of that perticular row and column */
+    text-align: center;
+    /* how much should be width of box or how much space should be needed to show the number from 1 to 10  */
+    width: 80px;
+    
+}
+/* errorMessage is the class of errorMessage in HTML page */
+.errorMessage{
+    /* error massage should be in red as we want to tell them this is unacceptable demand */
+    color: red;
+
+    font-weight:600;
+    /* so that we can some space around the massage */
+    margin: 10px;
+    /* now we dont need to show the massage (or their is no need to show the continusly ) so we can put the display value at none */
+    /* later on we can add this functionallty with javascript that when ever we need the massage (for going beyond the limit which is set).  */
+    display: none;
+
+}
+
+/* here the class is btn so we are using .btn */
+.btn{
+    /* we can write it as we need like ( capitalise, lovercare ,etc) */
+    text-transform: uppercase;
+    /* to make it look like a button width should be more then height */
+    width: 200px;
+    /* height of the button */
+    height: 45px;
+    margin: 20px 0;
+    /* to get the desired font size in the botton */
+    font-size: 25px;
+    /* the font in which we want to see (get photo ) in the website */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* to get the corved corner in the botton */
+    border-radius: 10px;
+    /* the background color of the button  */
+    background-color: black;
+    /* the colour in which the (the get photo is written) */
+    color: beige;
+    /* if we want to have shadow around the button  */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3) ;
+}
+
+/* the btn:hover is used for animation of botton when will click on it or try to click and moving the corser on the button. */
+.btn:hover{
+    /* the text will become white if we move the corser on the button. */
+    color: beige;
+    /* the background colour will change from the black to green if we move the corser or if we will the button. */
+    background-color: green;
+    /* the conser will change to the pointer when the corser will come to the button. */
+    cursor: pointer;
+    /* we can set the transstion time out of the change to green so will go 300millisec slowly */
+    transition: background-color 300ms ease-in-out;
+  
+}
+
+/* now we are targating the gallery(container) img 
+class is gallery*/
+.gallery img{
+    /* width of the photos which will be seen on the website */
+    width: 350px;
+    /* height of the photo in the website */
+    height: 370px;
+    /* the rounded corner of the photo which will bw seen . */
+    border-radius: 10px;
+    /* wwilling to get every image in the center of the container */
+    object-fit: cover;
+    /* the space between each and every photo on the website after it wiil show (or we can seperate every iten o the website by using the margine. */
+    margin: 5px;
+}
+
+/*  */
+.gallery{
+    /* at the starting we dont want any of the photos in the web site so we can set the display to be none later on we can set it with javascript. */
+    display: none;
+}
