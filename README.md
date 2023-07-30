@@ -22,7 +22,7 @@ This project is an image generator web application that takes the number of inpu
 
 ## Demo
 
-![temp](https://github.com/smile-1006/image-generator/assets/92777010/6ddb765a-03e2-4af8-9a36-34a839288e7d)
+![temp](https://github.com/smile-1006/imageGenerator/assets/92777010/116fe7eb-3a4c-40c9-92d6-e777c7dfef3b)
 
 ## Features
 
